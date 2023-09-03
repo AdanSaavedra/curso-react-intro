@@ -1,0 +1,36 @@
+li {
+  display: flex;
+  border-radius: 35px;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  color: #ae7bff;
+  font-size: 18px;
+}
+span {
+  padding: 0 12px;
+  cursor: pointer;
+}
+.x {
+  color: #000;
+  font-weight: 500;
+}
+.x:hover {
+  color: red;
+  transition: 300ms;
+}
+.done:hover {
+  filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
+    brightness(93%) contrast(106%);
+}
+.done-check {
+  filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
+    brightness(93%) contrast(106%);
+}
+.item-text-check {
+  text-decoration: line-through;
+  font-style: italic;
+}

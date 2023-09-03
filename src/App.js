@@ -1,15 +1,15 @@
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch";
-import { TodoList } from "./TodoList";
-import { TodoItem } from "./TodoItem";
-import { TodoButton } from "./TodoButton";
+import { TodoCounter } from "./components/TodoCount/TodoCounter";
+import { TodoSearch } from "./components/Search/TodoSearch";
+import { TodoList } from "./components/TodoList/TodoList";
+import { TodoItem } from "./components/TodoItems/TodoItem";
+import { TodoButton } from "./components/CreateButton/TodoButton";
 import React from "react";
 
 const defaultTodos = [
-  { text: "Cortar cebolla", completed: false },
+  { text: "Cortar cebolla", completed: true },
   { text: "Tomar el curso de intro a React", completed: false },
   { text: "Estudiar en platzi", completed: false },
-  { text: "lalalla", completed: false },
+  { text: "lalalla", completed: true },
 ];
 
 function App() {
