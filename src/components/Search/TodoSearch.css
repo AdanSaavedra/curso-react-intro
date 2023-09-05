@@ -8,6 +8,7 @@ input {
   border-radius: 35px;
   padding: 0 20px;
   text-align: center;
+  color: #ae7bff;
 }
 input::placeholder {
   font-style: italic;
