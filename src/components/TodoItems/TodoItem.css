@@ -14,19 +14,19 @@ span {
   padding: 0 12px;
   cursor: pointer;
 }
-.x {
+.delete {
   color: #000;
   font-weight: 500;
 }
-.x:hover {
+.delete:hover {
   color: red;
   transition: 300ms;
 }
-.done:hover {
+.complete:hover {
   filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
     brightness(93%) contrast(106%);
 }
-.done-check {
+.complete-check {
   filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
     brightness(93%) contrast(106%);
 }

@@ -1,4 +1,4 @@
-input {
+.inp {
   height: 60px;
   align-self: center;
   width: 100%;
@@ -10,13 +10,13 @@ input {
   text-align: center;
   color: #ae7bff;
 }
-input::placeholder {
+.inp::placeholder {
   font-style: italic;
   color: #ae7bff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-input:focus {
+.inp:focus {
   outline: 2px solid #c27bff;
   transition: 300ms;
   color: #ae7bff;
