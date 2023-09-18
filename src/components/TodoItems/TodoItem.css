@@ -14,22 +14,6 @@ span {
   padding: 0 12px;
   cursor: pointer;
 }
-.delete {
-  color: #000;
-  font-weight: 500;
-}
-.delete:hover {
-  color: red;
-  transition: 300ms;
-}
-.complete:hover {
-  filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
-    brightness(93%) contrast(106%);
-}
-.complete-check {
-  filter: invert(19%) sepia(100%) saturate(3086%) hue-rotate(117deg)
-    brightness(93%) contrast(106%);
-}
 .item-text-check {
   text-decoration: line-through;
   font-style: italic;

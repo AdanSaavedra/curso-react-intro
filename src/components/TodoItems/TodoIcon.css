@@ -1,0 +1,12 @@
+.Icon-svg {
+  width: 24px;
+  height: 24px;
+}
+.Icon-check:hover .Icon-svg {
+  fill: green;
+  transition: 200ms;
+}
+.Icon-delete:hover .Icon-svg {
+  fill: red;
+  transition: 200ms;
+}
