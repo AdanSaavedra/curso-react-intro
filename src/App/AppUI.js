@@ -3,27 +3,32 @@ import { TodoSearch } from "../components/Search/TodoSearch";
 import { TodoList } from "../components/TodoList/TodoList";
 import { TodoItem } from "../components/TodoItems/TodoItem";
 import { TodoButton } from "../components/CreateButton/TodoButton";
+import { TodosLoading } from "../components/TodosLoading";
+import { TodosError } from "../components/TodosError";
+import { EmptyTodos } from "../components/EmptyTodos";
+import { Modal } from "../Modal";
+import { TodoContext } from "../TodoContext";
+import React from "react";
 
-function AppUI({
-  loading,
-  error,
-  completedTodos,
-  TotalTodos,
-  searchedTodos,
-  setSearchValue,
-  searchValue,
-  completeTodo,
-  deleteTodo,
-}) {
+function AppUI() {
+  const {
+    loading,
+    error,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+  } = React.useContext(TodoContext);
   return (
     <>
-      <TodoCounter completed={completedTodos} total={TotalTodos} />
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
+      <TodoCounter />
+      <TodoSearch />
 
       <TodoList>
-        {loading && <p>Estamos Cargando...</p>}
-        {error && <p>Hubo un error!!</p>}
-        {!loading && searchedTodos.length == 0 && <p>Crea tu primer TODO!</p>}
+        {loading && <TodosLoading />}
+        {error && <TodosError />}
+        {!loading && searchedTodos.length === 0 && <EmptyTodos />}
 
         {searchedTodos.map((todo) => (
           <TodoItem
@@ -38,6 +43,8 @@ function AppUI({
       </TodoList>
 
       <TodoButton />
+
+      {openModal && <Modal>la funcionalidad de agregar todo</Modal>}
     </>
   );
 }
