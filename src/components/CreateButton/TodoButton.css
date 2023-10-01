@@ -8,6 +8,7 @@ button {
   color: #c27bff;
   font-size: 30px;
   margin: 0 0 130px;
+  z-index: 1;
 }
 button:hover {
   background-color: #c27bff;

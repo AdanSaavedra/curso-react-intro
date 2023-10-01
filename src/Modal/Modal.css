@@ -1,0 +1,13 @@
+.ModalBG {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 35, 41, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
