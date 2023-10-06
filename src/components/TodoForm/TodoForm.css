@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #a171ff;
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+textarea {
+  width: 400px;
+  height: 82px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 20px 20px 0 24px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+textarea::placeholder {
+  font-style: italic;
+}
+.TodoForm-label {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.TodoForm-buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.TodoForm-button {
+  padding: 6px 22px;
+  font-size: 24px;
+  margin: 0;
+  height: 100%;
+}
+.TodoForm-button:hover {
+  outline: 2px solid #fff;
+  transition: 300ms;
+  transform: scale(1.1);
+}

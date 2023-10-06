@@ -3,6 +3,7 @@ import { TodoSearch } from "../components/Search/TodoSearch";
 import { TodoList } from "../components/TodoList/TodoList";
 import { TodoItem } from "../components/TodoItems/TodoItem";
 import { TodoButton } from "../components/CreateButton/TodoButton";
+import { TodoForm } from "../components/TodoForm";
 import { TodosLoading } from "../components/TodosLoading";
 import { TodosError } from "../components/TodosError";
 import { EmptyTodos } from "../components/EmptyTodos";
@@ -44,7 +45,11 @@ function AppUI() {
 
       <TodoButton setOpenModal={setOpenModal} />
 
-      {openModal && <Modal>la funcionalidad de agregar todo</Modal>}
+      {openModal && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+      )}
     </>
   );
 }
